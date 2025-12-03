@@ -64,7 +64,7 @@ I'm a passionate **Electronics Engineering** student at RGIPT with a strong focu
 - Real-time monitoring dashboard with mobile app integration
 - Automated nutrient dosing based on sensor feedback
 
-### 🌾 [Advanced Soil Monitoring System](https://github.com/akhileshwar-p-s/Soil-Monitoring-IoT)
+### 🌾 [Advanced Soil Monitoring System](https://github.com/akhileshwar-p-s/Advanced-Soil-Monitoring-System)
 > IoT-based real-time soil monitoring with cloud analytics
 - **Tech Stack:** ESP32, Soil Sensors, ThingSpeak, C++
 - Multi-sensor integration for comprehensive soil health tracking
