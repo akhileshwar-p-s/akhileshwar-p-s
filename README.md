@@ -78,13 +78,6 @@ I'm a passionate **Electronics Engineering** student at RGIPT with a strong focu
 - Enhanced robot reliability and reduced assembly time by 50%
 - Modular design for easy integration
 
-### 🤖 [Autonomous Maze-Solving Robot](https://github.com/akhileshwar-p-s/Maze-Solver-Robot)
-> Competition-winning autonomous navigation system
-- **Tech Stack:** Arduino, Ultrasonic Sensors, Motor Drivers
-- Winner of Urjotsav 2024 (280+ teams)
-- Advanced pathfinding algorithms for real-time navigation
-- Optimized sensor fusion for accurate maze mapping
-
 ---
 
 ## 💼 Professional Experience
@@ -132,17 +125,9 @@ I'm a passionate **Electronics Engineering** student at RGIPT with a strong focu
 
 ## 📫 How to Reach Me
 
-- 📧 Email: apscms123@gmail.com | 23ec3008@rgipt.ac.in
+- 📧 Email: akhileshwarrc@gmail.com | 23ec3008@rgipt.ac.in
 - 💼 LinkedIn: [linkedin.com/in/akhileshwar-p-s](https://linkedin.com/in/akhileshwar-p-s)
 - 📱 Phone: +91-7318201289
-
----
-
-## 📈 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=akhileshwar-p-s&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akhileshwar-p-s&layout=compact&theme=radical)
 
 ---
 
