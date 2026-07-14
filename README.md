@@ -1,140 +1,127 @@
-# Hi there, I'm Akhileshwar Pratap Singh 👋
+<div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/akhileshwar-p-s)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:apscms123@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akhileshwar-p-s)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1628,100:1F5A63&height=220&section=header&text=Akhileshwar%20Pratap%20Singh&fontSize=42&fontColor=4CD9E8&animation=fadeIn&fontAlignY=38&desc=Robotics%20Engineer%20%E2%80%94%20Autonomous%20Systems%20%C2%B7%20Embedded%20Firmware%20%C2%B7%20Robot%20Learning&descAlignY=58&descSize=18&descColor=E8EEF5" width="100%"/>
 
-## 🚀 About Me
+<a href="https://github.com/akhileshwar-p-s">
+  <img src="https://readme-typing-svg.demolab.com/?lines=building+autonomous+robots+that+see+%26+move;ROS+2+%C2%B7+Gazebo+%C2%B7+MoveIt+%C2%B7+embedded+firmware;Secretary+%E2%80%94+Robotics+%26+Automation+Society%2C+IEEE+RGIPT;from+potentiometers+to+pick-and-place+with+VLA&font=Fira+Code&size=20&pause=1400&color=4CD9E8&center=true&vCenter=true&width=780&height=50&background=00000000" alt="Typing SVG" />
+</a>
 
-I'm a passionate **Electronics Engineering** student at RGIPT with a strong focus on **Embedded Systems, Robotics, and IoT Solutions**. I specialize in designing automation systems, developing embedded hardware, and creating innovative robotics projects with hands-on experience in PCB design, sensor integration, and industrial automation.
+<br>
 
-- 🔭 Currently working on **Industrial Biogas Plant Automation System** (Patent Pending)
-- 🌱 Learning **ROS Framework** for robotics navigation and control
-- 💼 Former Embedded Systems Intern at **Bharat Electronics Ltd.**
-- 🤖 Head of **IEEE Robotics and Automation Society, RGIPT**
-- 🏆 Winner of **Urjotsav 2024** and **1st Runner-Up at IIT Bombay Meshmerize**
+[![GitHub](https://img.shields.io/badge/-akhileshwar--p--s-0A1628?style=for-the-badge&logo=github&logoColor=4CD9E8)](https://github.com/akhileshwar-p-s)
+[![LinkedIn](https://img.shields.io/badge/-akhileshwar--p--s-0A1628?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/akhileshwar-p-s)
+[![RGIPT](https://img.shields.io/badge/-RGIPT%20%C2%B7%20EEE-0A1628?style=for-the-badge&logo=readthedocs&logoColor=F5A623)](https://github.com/akhileshwar-p-s)
 
----
+</div>
 
-## 🔧 Technical Skills
+<br>
 
-### Programming Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+## ⚙ system.log
 
-### Tools & Frameworks
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-![ROS](https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white)
-![KiCAD](https://img.shields.io/badge/KiCAD-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+```yaml
+role:        Robotics Engineering Student — EEE, RGIPT
+position:    Secretary, Robotics & Automation Society (IEEE RGIPT)
+internships: Bharat Electronics Ltd (embedded systems, ROS 2)
+             Altersage Innovations, Kozhikode (ROS 2 autonomous harvesting)
+focus:       autonomous navigation · manipulation · imitation learning
+status:      compiling firmware, tuning controllers, chasing zero jitter
+```
 
-### Hardware & Embedded Systems
-- ESP32 & Arduino Development
-- PCB Design (KiCAD, EasyEDA)
-- Sensor Integration & IoT
-- LoRa & Bluetooth Communication
-- Industrial Automation & Control Systems
+<br>
 
----
+## 🤖 workbench — active builds
 
-## 🎯 Current Focus
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-- 🏭 Building **microcontroller-free industrial automation systems** with advanced safety protocols
-- 🤖 Implementing **ROS framework** for autonomous robotics applications
-- 🌐 Developing **IoT-based monitoring systems** for agriculture and industry
-- ⚡ Working on **PCB design optimization** for embedded systems
+### 🦾 Master-Slave Robotic Arm
+5-channel teleoperated arm — potentiometer master mirrors servo slave in real time. Exponential smoothing kills jitter, piecewise calibration maps each joint around its true home position.
+<br><sub>`Arduino Mega` `C++` `analog control`</sub>
 
----
+</td>
+<td width="50%" valign="top">
 
-## 📊 Featured Projects
+### 🥥 CocoBot
+Robotic arm for autonomous coconut harvesting, running full ROS 2 Jazzy stack on a Jetson Orin Nano.
+<br><sub>`ROS 2 Jazzy` `Jetson Orin Nano` `manipulation`</sub>
 
-### 🏭 [Industrial Biogas Plant Automation System](https://github.com/akhileshwar-p-s/Industrial-Biogas-Automation) ⭐ Patent Pending
-> Microcontroller-free control system with three-tier safety alerts for industrial biogas plants
-- **Tech Stack:** Industrial Relays, Solenoid Valves, Safety Switches
-- Designed complete automation from dome filling to storage with fail-safe protocols
-- Implemented three-tier safety system for harsh industrial environments
-- Reduced manual intervention and improved operational safety
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 🌱 [Advanced Hydroponics Monitoring System](https://github.com/akhileshwar-p-s/Advanced-Hydroponics-System)
-> Automated nutrient dosing and pH control for precision agriculture
-- **Tech Stack:** ESP32, pH/EC Sensors, Blynk IoT, C++
-- Achieved 45% water reduction and 30% yield increase
-- Real-time monitoring dashboard with mobile app integration
-- Automated nutrient dosing based on sensor feedback
+### 🚚 Campus_Bot
+Autonomous campus delivery robot — Nav2 + SLAM for real-time localization and path planning.
+<br><sub>`ROS 2` `Nav2` `SLAM`</sub>
 
-### 🌾 [Advanced Soil Monitoring System](https://github.com/akhileshwar-p-s/Advanced-Soil-Monitoring-System)
-> IoT-based real-time soil monitoring with cloud analytics
-- **Tech Stack:** ESP32, Soil Sensors, ThingSpeak, C++
-- Multi-sensor integration for comprehensive soil health tracking
-- Automated irrigation alerts and cloud data analytics
-- Remote monitoring and control capabilities
+</td>
+<td width="50%" valign="top">
 
-### 🔌 [Custom Carrier Board](https://github.com/akhileshwar-p-s/Custom-Carrier-Board-)
-> Compact PCB design for robotics applications
-- **Tech Stack:** KiCAD, Arduino, Motor Drivers, Sensor Arrays
-- Reduced wiring complexity by 88%
-- Enhanced robot reliability and reduced assembly time by 50%
-- Modular design for easy integration
+### 📦 Warehouse Bot
+AMR for autonomous warehouse inventory navigation, packaged as a standalone ROS 2 node.
+<br><sub>`ROS 2` `warehouse_pkg` `AMR`</sub>
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-## 💼 Professional Experience
+### 🎯 ArUco Stem Arm
+Gazebo-simulated arm detecting ArUco markers and green stems, aligning the end effector for precision picking.
+<br><sub>`Gazebo` `OpenCV` `ArUco`</sub>
 
-### 🔧 Bharat Electronics Ltd. | Embedded Systems Intern
-**May 2025 – July 2025 | Pune**
-- Designed power adapter PCB for Laser Range Finder in Indian defense applications
-- Complete PCB design and testing cycle for embedded systems components
-- Practiced ROS framework for robotics navigation and control
+</td>
+<td width="50%" valign="top">
 
-### 💡 Yapassio Pvt. Ltd. | Research and Development Intern
-**May 2024 – July 2024 | Remote**
-- Improved system efficiency by 40% and reduced operational expenses by 39%
-- Engineered 12 prototypes leading to 6 successful feature launches
+### ✂ Arm + Box Pipeline
+Depth-camera box detection → end-effector approach → pruner-based cutting, triggered from a GUI, planned with MoveIt 2.
+<br><sub>`MoveIt 2` `depth camera` `motion planning`</sub>
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-## 🏆 Achievements
+### 🧠 Cyberwave Hackathon Build
+Pick-and-place robot powered by SmolVLA — built at a Physical AI hackathon.
+<br><sub>`SmolVLA` `VLA` `Physical AI`</sub>
 
-- 🥇 **Winner** - Urjotsav 2024 (Autonomous Maze-Solving Robot)
-- 🥈 **1st Runner-Up** - Meshmerize, IIT Bombay TechFest (2000+ teams)
-- 🎤 **Speaker** - RGIPT X IIT Bombay Techfest Robotics Workshop (240+ students)
-- 👨‍💼 **Head** - IEEE Robotics and Automation Society, RGIPT
+</td>
+<td width="50%" valign="top">
 
----
+### 🔺 Closed-Loop Mechanism
+URDF / ROS 2 simulation of a closed-loop prismatic-triangular robotic mechanism.
+<br><sub>`URDF` `ROS 2` `kinematics`</sub>
 
-## 📚 Currently Learning
+</td>
+</tr>
+</table>
 
-- Advanced ROS2 framework for autonomous systems
-- Machine Learning integration in embedded systems
-- Industrial automation protocols and safety standards
-- Advanced PCB design techniques for high-reliability applications
+<br>
 
----
-
-## 🤝 Open to Collaborate On
-
-- 🤖 Robotics projects with ROS/ROS2
-- 📟 Embedded systems and IoT solutions
-- 🔌 PCB design and hardware development
-- 🏭 Industrial automation systems
-- 🌱 Smart agriculture and environmental monitoring
-
----
-
-## 📫 How to Reach Me
-
-- 📧 Email: akhileshwarrc@gmail.com | 23ec3008@rgipt.ac.in
-- 💼 LinkedIn: [linkedin.com/in/akhileshwar-p-s](https://linkedin.com/in/akhileshwar-p-s)
-- 📱 Phone: +91-7318201289
-
----
-
-⚡ **Fun Fact:** I believe the best engineering solutions come from understanding both hardware constraints and software possibilities!
-
----
+## 🧬 stack
 
 <div align="center">
-  <i>Let's build something amazing together! 🚀</i>
+<img src="https://skillicons.dev/icons?i=ros,python,cpp,arduino,opencv,cmake,git,linux,vscode&theme=dark" />
 </div>
+
+<br>
+
+<div align="center">
+
+`ROS 2 (Jazzy)` &nbsp;·&nbsp; `Gazebo` &nbsp;·&nbsp; `MoveIt` &nbsp;·&nbsp; `RViz` &nbsp;·&nbsp; `Python` &nbsp;·&nbsp; `C++` &nbsp;·&nbsp; `OpenCV` &nbsp;·&nbsp; `Arduino / ESP32 / STM32` &nbsp;·&nbsp; `ACT / VLA imitation learning`
+
+</div>
+
+
+## 📡 connect
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-akhileshwar--p--s-0A1628?style=for-the-badge&logo=github&logoColor=4CD9E8&labelColor=0A1628)](https://github.com/akhileshwar-p-s)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-akhileshwar--p--s-0A1628?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0A1628)](https://www.linkedin.com/in/akhileshwar-p-s)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F5A63,100:0A1628&height=100&section=footer" width="100%"/>
