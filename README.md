@@ -1,127 +1,64 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1628,100:1F5A63&height=220&section=header&text=Akhileshwar%20Pratap%20Singh&fontSize=42&fontColor=4CD9E8&animation=fadeIn&fontAlignY=38&desc=Robotics%20Engineer%20%E2%80%94%20Autonomous%20Systems%20%C2%B7%20Embedded%20Firmware%20%C2%B7%20Robot%20Learning&descAlignY=58&descSize=18&descColor=E8EEF5" width="100%"/>
-
-<a href="https://github.com/akhileshwar-p-s">
-  <img src="https://readme-typing-svg.demolab.com/?lines=building+autonomous+robots+that+see+%26+move;ROS+2+%C2%B7+Gazebo+%C2%B7+MoveIt+%C2%B7+embedded+firmware;Secretary+%E2%80%94+Robotics+%26+Automation+Society%2C+IEEE+RGIPT;from+potentiometers+to+pick-and-place+with+VLA&font=Fira+Code&size=20&pause=1400&color=4CD9E8&center=true&vCenter=true&width=780&height=50&background=00000000" alt="Typing SVG" />
-</a>
-
-<br>
-
-[![GitHub](https://img.shields.io/badge/-akhileshwar--p--s-0A1628?style=for-the-badge&logo=github&logoColor=4CD9E8)](https://github.com/akhileshwar-p-s)
-[![LinkedIn](https://img.shields.io/badge/-akhileshwar--p--s-0A1628?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/akhileshwar-p-s)
-[![RGIPT](https://img.shields.io/badge/-RGIPT%20%C2%B7%20EEE-0A1628?style=for-the-badge&logo=readthedocs&logoColor=F5A623)](https://github.com/akhileshwar-p-s)
-
+<img src="./assets/banner.svg" width="100%"/>
 </div>
 
 <br>
 
-## ⚙ system.log
+```
+$ ./init_akhileshwar.sh
 
-```yaml
-role:        Robotics Engineering Student — EEE, RGIPT
-position:    Secretary, Robotics & Automation Society (IEEE RGIPT)
-internships: Bharat Electronics Ltd (embedded systems, ROS 2)
-             Altersage Innovations, Kozhikode (ROS 2 autonomous harvesting)
-focus:       autonomous navigation · manipulation · imitation learning
-status:      compiling firmware, tuning controllers, chasing zero jitter
+[ 0.001 ] loading kernel .......................... ROS 2 (Jazzy)
+[ 0.014 ] mounting simulation env ................. Gazebo · RViz
+[ 0.031 ] initializing planner .................... MoveIt 2
+[ 0.052 ] calibrating vision ....................... OpenCV
+[ 0.077 ] flashing firmware ........................ Arduino · ESP32 · STM32
+[ 0.098 ] loading policy ........................... ACT / VLA imitation learning
+[ 0.114 ] role ...................................... Robotics Engineering Student, EEE — RGIPT
+[ 0.130 ] appointment ............................... Secretary, Robotics & Automation Society, IEEE RGIPT
+[ 0.145 ] prior deployments ......................... Bharat Electronics Ltd · Altersage Innovations, Kozhikode
+[ 0.161 ] status .................................... READY
+
+akhileshwar@rgipt:~$ _
 ```
 
 <br>
 
-## 🤖 workbench — active builds
+## Sub Systems — Active builds
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+| Unit | Status | Description | Stack |
+|---|---|---|---|
+| `master-slave-arm` | `● ONLINE` | 5-channel teleoperated arm — potentiometer master mirrors servo slave in real time. Exponential smoothing + piecewise calibration around each joint's home position. | `Arduino Mega` `C++` |
+| `cocobot` | `● ONLINE` | Coconut-harvesting robotic arm running full ROS 2 Jazzy stack on a Jetson Orin Nano. | `ROS 2` `Jetson Orin Nano` |
+| `campus-bot` | `◐ SIMULATED` | Autonomous campus delivery robot — Nav2 + SLAM for localization and path planning. | `ROS 2` `Nav2` `SLAM` |
+| `warehouse-bot` | `◐ SIMULATED` | AMR for autonomous warehouse inventory navigation, packaged as a standalone ROS 2 node. | `ROS 2` `AMR` |
+| `aruco-stem-arm` | `◐ SIMULATED` | Gazebo arm workspace detecting ArUco markers + green stems, aligning the end effector for pick sequences. | `Gazebo` `OpenCV` `ArUco` |
+| `arm-box-pipeline` | `◐ SIMULATED` | Depth-camera box detection → end-effector approach → pruner-based cutting, planned with MoveIt 2, triggered via GUI. | `MoveIt 2` `depth camera` |
+| `cyberwave-build` | `● ONLINE` | Pick-and-place robot powered by SmolVLA — built at a Physical AI hackathon. | `SmolVLA` `VLA` |
+| `closed-loop-mech` | `◐ SIMULATED` | URDF / ROS 2 simulation of a closed-loop prismatic-triangular robotic mechanism. | `URDF` `ROS 2` |
 
-### 🦾 Master-Slave Robotic Arm
-5-channel teleoperated arm — potentiometer master mirrors servo slave in real time. Exponential smoothing kills jitter, piecewise calibration maps each joint around its true home position.
-<br><sub>`Arduino Mega` `C++` `analog control`</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🥥 CocoBot
-Robotic arm for autonomous coconut harvesting, running full ROS 2 Jazzy stack on a Jetson Orin Nano.
-<br><sub>`ROS 2 Jazzy` `Jetson Orin Nano` `manipulation`</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🚚 Campus_Bot
-Autonomous campus delivery robot — Nav2 + SLAM for real-time localization and path planning.
-<br><sub>`ROS 2` `Nav2` `SLAM`</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 📦 Warehouse Bot
-AMR for autonomous warehouse inventory navigation, packaged as a standalone ROS 2 node.
-<br><sub>`ROS 2` `warehouse_pkg` `AMR`</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🎯 ArUco Stem Arm
-Gazebo-simulated arm detecting ArUco markers and green stems, aligning the end effector for precision picking.
-<br><sub>`Gazebo` `OpenCV` `ArUco`</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### ✂ Arm + Box Pipeline
-Depth-camera box detection → end-effector approach → pruner-based cutting, triggered from a GUI, planned with MoveIt 2.
-<br><sub>`MoveIt 2` `depth camera` `motion planning`</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 Cyberwave Hackathon Build
-Pick-and-place robot powered by SmolVLA — built at a Physical AI hackathon.
-<br><sub>`SmolVLA` `VLA` `Physical AI`</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔺 Closed-Loop Mechanism
-URDF / ROS 2 simulation of a closed-loop prismatic-triangular robotic mechanism.
-<br><sub>`URDF` `ROS 2` `kinematics`</sub>
-
-</td>
-</tr>
-</table>
+<sub>`● ONLINE` — deployed on physical hardware &nbsp;·&nbsp; `◐ SIMULATED` — running in Gazebo / simulation</sub>
 
 <br>
 
-## 🧬 stack
+## Loaded Modules
+
+```
+perception    │ OpenCV · ArUco detection · depth cameras
+planning      │ MoveIt 2 · Nav2 · SLAM
+simulation    │ Gazebo · RViz · URDF
+control       │ ROS 2 (Jazzy) · piecewise servo calibration · exponential smoothing
+hardware      │ Arduino Mega · ESP32 · STM32 · Jetson Orin Nano
+learning      │ ACT · VLA (SmolVLA) — imitation learning for manipulation
+languages     │ Python · C++
+```
+
+## Transmission Ports
+
+| port | address |
+|---|---|
+| `01 · github` | [github.com/akhileshwar-p-s](https://github.com/akhileshwar-p-s) |
+| `02 · linkedin` | [linkedin.com/in/akhileshwar-p-s](https://www.linkedin.com/in/akhileshwar-p-s) |
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=ros,python,cpp,arduino,opencv,cmake,git,linux,vscode&theme=dark" />
+<sub>end of transmission _</sub>
 </div>
-
-<br>
-
-<div align="center">
-
-`ROS 2 (Jazzy)` &nbsp;·&nbsp; `Gazebo` &nbsp;·&nbsp; `MoveIt` &nbsp;·&nbsp; `RViz` &nbsp;·&nbsp; `Python` &nbsp;·&nbsp; `C++` &nbsp;·&nbsp; `OpenCV` &nbsp;·&nbsp; `Arduino / ESP32 / STM32` &nbsp;·&nbsp; `ACT / VLA imitation learning`
-
-</div>
-
-
-## 📡 connect
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-akhileshwar--p--s-0A1628?style=for-the-badge&logo=github&logoColor=4CD9E8&labelColor=0A1628)](https://github.com/akhileshwar-p-s)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-akhileshwar--p--s-0A1628?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=0A1628)](https://www.linkedin.com/in/akhileshwar-p-s)
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F5A63,100:0A1628&height=100&section=footer" width="100%"/>
