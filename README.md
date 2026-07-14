@@ -10,13 +10,13 @@ $ ./init_akhileshwar.sh
 [ 0.001 ] loading kernel .......................... ROS 2 (Jazzy)
 [ 0.014 ] mounting simulation env ................. Gazebo · RViz
 [ 0.031 ] initializing planner .................... MoveIt 2
-[ 0.052 ] calibrating vision ....................... OpenCV
-[ 0.077 ] flashing firmware ........................ Arduino · ESP32 · STM32
-[ 0.098 ] loading policy ........................... ACT / VLA imitation learning
-[ 0.114 ] role ...................................... Robotics Engineering Student, EEE — RGIPT
-[ 0.130 ] appointment ............................... Secretary, Robotics & Automation Society, IEEE RGIPT
-[ 0.145 ] prior deployments ......................... Bharat Electronics Ltd · Altersage Innovations, Kozhikode
-[ 0.161 ] status .................................... READY
+[ 0.052 ] calibrating vision ...................... OpenCV
+[ 0.077 ] flashing firmware ....................... Arduino · ESP32 · STM32
+[ 0.098 ] loading policy .......................... ACT / VLA imitation learning
+[ 0.114 ] role .................................... Robotics Engineering Student, EEE — RGIPT
+[ 0.130 ] appointment ............................. Secretary, Robotics & Automation Society, IEEE RGIPT
+[ 0.145 ] prior deployments ....................... Bharat Electronics Ltd · Altersage Innovations, Kozhikode
+[ 0.161 ] status .................................. READY
 
 akhileshwar@rgipt:~$ _
 ```
