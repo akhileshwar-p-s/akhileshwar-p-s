@@ -26,12 +26,12 @@
   </rect>
 
   <text x="62" y="155" font-family="Consolas, monospace" font-size="18" fill="#4CD9E8" opacity="0">
-    robotics engineer — autonomous systems / embedded firmware / robot learning
+    Robotics Engineer — Autonomous Systems / Embedded firmware / Robot learning (Physical AI)
     <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.9s" fill="freeze"/>
   </text>
 
   <text x="62" y="183" font-family="Consolas, monospace" font-size="13" fill="#7C93AC" opacity="0">
-    secretary, robotics &amp; automation society — ieee rgipt
+    Secretary, Rbotics &amp; Automation Society — IEEE RGIPT
     <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.9s" fill="freeze"/>
   </text>
 
