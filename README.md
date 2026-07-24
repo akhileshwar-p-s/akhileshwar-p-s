@@ -13,9 +13,9 @@ $ ./init_akhileshwar.sh
 [ 0.052 ] calibrating vision ...................... OpenCV
 [ 0.077 ] flashing firmware ....................... Arduino · ESP32 · STM32
 [ 0.098 ] loading policy .......................... ACT / VLA imitation learning
-[ 0.114 ] role .................................... Robotics Engineering Student, EEE — RGIPT
+[ 0.114 ] role .................................... Electronics Engineering Student, EEE — RGIPT
 [ 0.130 ] appointment ............................. Secretary, Robotics & Automation Society, IEEE RGIPT
-[ 0.145 ] prior deployments ....................... Bharat Electronics Ltd · Altersage Innovations, Kozhikode
+[ 0.145 ] prior deployments ....................... Altersage Innovations Pvt. Ltd., Kozhikode · Bharat Electronics Ltd, Pune.
 [ 0.161 ] status .................................. READY
 
 akhileshwar@rgipt:~$ _
