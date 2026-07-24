@@ -64,4 +64,74 @@
       </g>
     </g>
   </g>
+
+  <!-- Autonomous Mobile Robot: drives across the banner, becomes a drone mid-jump over the name, then reverts to AMR on landing -->
+  <g id="amr-bot">
+
+    <!-- Ground AMR form -->
+    <g id="amr-visual" opacity="1">
+      <ellipse cx="0" cy="15" rx="20" ry="4" fill="#000000" opacity="0.35"/>
+      <rect x="-16" y="-8" width="32" height="14" rx="3" fill="#F5A623" stroke="#0A1628" stroke-width="1"/>
+      <rect x="-11" y="-15" width="10" height="8" rx="2" fill="#0A1628" stroke="#4CD9E8" stroke-width="1.5"/>
+      <circle cx="-10" cy="8" r="6" fill="#0A1628" stroke="#4CD9E8" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 -10 8" to="360 -10 8" dur="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="10" cy="8" r="6" fill="#0A1628" stroke="#4CD9E8" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 10 8" to="360 10 8" dur="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="0" y1="-8" x2="0" y2="-15" stroke="#4CD9E8" stroke-width="2"/>
+      <circle cx="0" cy="-17" r="3" fill="#4CD9E8">
+        <animate attributeName="opacity" values="1;0.2;1" dur="0.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" begin="0s"
+        keyTimes="0;0.10;0.16;0.50;0.56;1"
+        values="1;1;0;0;1;1"/>
+    </g>
+
+    <!-- Airborne drone form -->
+    <g id="drone-visual" opacity="0">
+      <ellipse cx="0" cy="10" rx="16" ry="3" fill="#000000" opacity="0.2"/>
+      <line x1="-14" y1="-4" x2="14" y2="-4" stroke="#4CD9E8" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="6" stroke="#4CD9E8" stroke-width="2"/>
+      <circle cx="0" cy="-4" r="5" fill="#F5A623" stroke="#0A1628" stroke-width="1"/>
+      <circle cx="0" cy="2" r="2" fill="#4CD9E8">
+        <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <g transform="translate(-14,-4)">
+        <line x1="0" y1="0" x2="0" y2="-6" stroke="#3A5068" stroke-width="2"/>
+        <ellipse cx="0" cy="-6" rx="9" ry="2.2" fill="#4CD9E8" opacity="0.7">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 -6" to="360 0 -6" dur="0.1s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+      <g transform="translate(14,-4)">
+        <line x1="0" y1="0" x2="0" y2="-6" stroke="#3A5068" stroke-width="2"/>
+        <ellipse cx="0" cy="-6" rx="9" ry="2.2" fill="#4CD9E8" opacity="0.7">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 -6" to="360 0 -6" dur="0.11s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+      <g transform="translate(-14,-4)">
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#3A5068" stroke-width="2"/>
+        <ellipse cx="0" cy="6" rx="9" ry="2.2" fill="#4CD9E8" opacity="0.7">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 6" to="360 0 6" dur="0.12s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+      <g transform="translate(14,-4)">
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#3A5068" stroke-width="2"/>
+        <ellipse cx="0" cy="6" rx="9" ry="2.2" fill="#4CD9E8" opacity="0.7">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 6" to="360 0 6" dur="0.13s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" begin="0s"
+        keyTimes="0;0.10;0.16;0.50;0.56;1"
+        values="0;0;1;1;0;0"/>
+    </g>
+
+    <animateMotion
+      path="M -40,245 L 55,245 Q 200,50 360,50 Q 520,50 655,245 L 1240,245"
+      dur="9s"
+      repeatCount="indefinite"/>
+  </g>
 </svg>
